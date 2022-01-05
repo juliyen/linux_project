@@ -42,7 +42,7 @@ ggplot(d, aes(V2)) + geom_bar()
 #### plot DP per chr 
 
 ```
-gplot(lin, aes(chr)) + 
+ggplot(lin, aes(chr)) + 
 geom_bar() + 
 theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
