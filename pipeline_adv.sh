@@ -1,3 +1,4 @@
+#!/bin/bash
 # head only first two columns without a header
 cut -f1-2 luscinia_vars.vcf | grep -v '##' | tail -c +2 > lusc.vcf
 ## extract DP from initial file
