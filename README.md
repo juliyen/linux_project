@@ -87,3 +87,4 @@ dc %>%
   facet_wrap(~CHROM, ncol = 8)+ 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
+![image](https://user-images.githubusercontent.com/79110719/148412461-d4b51888-f1a0-4161-ab6d-5f75069a86c8.png)
