@@ -35,23 +35,23 @@ d <- read.delim("ready_to_work.csv", header=FALSE)
 ```
 #### plot wg distribution of DP 
 ```
-ggplot(d, aes(V2)) + geom_bar()
+ggplot(d, aes(V2)) + labs(x = "DP")+ geom_bar()
 ```
 ![image](https://user-images.githubusercontent.com/79110719/148211159-c0daf55d-9662-4040-8660-e8bd5d92cfdf.png)
 
 #### plot DP per chr 
 
 ```
-ggplot(lin, aes(chr)) + 
-geom_bar() + 
-theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+ggplot(d, aes(V1)) + 
+  geom_bar() + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+ labs(x = "DP")
 ```
 ![image](https://user-images.githubusercontent.com/79110719/148211234-bef2d8f1-b5fb-4666-8c3c-17fcd1b7fab8.png)
 
 
 ## create list of chr
 ```
-n <- d$chr 
+n <- d$V1 
 ```
 ## get unique names 
 ```
@@ -71,3 +71,5 @@ hist(l$V2, main = paste(one[i]), xlab ="DP")
 dev.off()
 ```
 ## pdf with graphs per chr is in the results
+
+
